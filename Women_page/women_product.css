@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#main_container{
+    border: px solid red;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* gap: 20px; */
+}
+#main_container img{
+    width: 90%;
+}
+.card_div{
+    border: px solid blue;
+}
+.slideshow_div{
+    border: px solid rgb(245, 225, 7);
+    height: 490px;
+    text-align: center;
+}
+.card_bottombox{
+    border: px solid red;
+    padding-left:20px ;
+    padding-right: 18px;
+    line-height: 12px;
+    height: 100px;
+}
+.price{
+    font-size: large;
+    font-weight: bold;
+}
+h1{
+    margin-left: 12%;
+    font-size: 46px;
+    font-weight: 550;
+
+}
+.basket_btn{
+    border: none;
+    padding-left:20px ;
+    width: 90%;
+    height: 60px;
+    background-color:#faa619;
+    margin-left: 5%;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.basket_btn:hover{
+    cursor: pointer;
+    font-size: 25px;
+    background-color:#cf8506;
+}
