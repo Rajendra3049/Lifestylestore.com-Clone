@@ -1,0 +1,107 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main_container{
+    border: px solid red;
+    width: 80%;
+    margin: auto;
+}
+
+/* --------------big image structure */
+.big_img{
+    border: px solid black;
+    margin-top: 80px;
+}
+.big_img img{
+    width: 100%;
+}
+
+/* ----------horizontal lines---------------- */
+hr{
+    margin-top: 60px;
+    /* margin-bottom: 20px; */
+    color: rgba(240, 236, 236, 0.753);
+}
+
+/* ---------------category structure--------------------- */
+.trending_category{
+    border: px solid blue;
+    margin-top: 50px;
+    
+}
+.trending_category h1{
+    margin-left: 15px;
+}
+.trending_category_div{
+    border: px solid black;
+    display: flex; 
+    text-align: center;
+}
+.trending_category_div img{
+    width: 90%;
+}
+
+/* ----------------------3div structure-------------------------*/
+.cat_3div{
+    margin-top: 50px;
+}
+.cat_3div h1{
+    margin-left: 15px;
+}
+#cat_3div_box{
+    border: px solid blueviolet;
+    display: flex;
+    text-align: center;
+}
+.cat_3div div img{
+    width: 90%;
+}
+
+/* ----------------category_box_12div structure------------ */
+.category_box_12div{
+    margin-top: 50px;
+}
+.category_box_12div h1{
+    margin-left: 15px;
+}
+.category_box__div{
+    display: flex; 
+    text-align: center;
+}
+
+.category_box__div img{
+    width: 90%;
+}
+
+/* ------best seller structure------------ */
+#best_seller{
+    margin-top: 50px;
+    
+}
+#best_seller h1{
+    margin-left: 15px;
+}
+.best_seller_box{
+    display: flex;
+    text-align: center;
+}
+.best_seller_box img{
+    width: 90%;
+}
+
+/* -----------shop by department----------- */
+#department_box{
+    margin-top: 50px;
+}
+#department_box h1{
+    margin-left: 15px;
+}
+.department_box2{
+    display: flex;
+    text-align: center;
+}
+.department_box2 img{
+    width: 90%;
+}
