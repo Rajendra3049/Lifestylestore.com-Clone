@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(248, 240, 229);
+}
+
+
+#add_Product{
+    /* border: 1px solid red; */
+    width: 40%;
+    margin: auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   background-color: rgb(252, 246, 246);
+   margin-top: 40px;
+}
+#add_Product h1{
+    margin: auto;
+    /* color: blueviolet; */
+}
+#add_Product input{
+    border-radius: 5px;
+    margin: auto;
+    width: 98%;
+    margin-bottom: 10px;
+    background-color: rgb(243, 243, 243);
+    border: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* color: blueviolet; */
+}
+#Category{
+    border-radius: 5px;
+    width: 98%;
+    margin-bottom: 10px;
+    background-color: rgb(243, 243, 243);
+    border: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+   
+}
+#Discription{
+    height: 80px;
+}
+#ADDP{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#ADDP>h1{
+    color: rgb(252, 137, 92);
+}
+
+#add_img{
+    background-color: rgb(228, 210, 212);
+    border: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-size: large;
+    border-radius: 5pc;
+    display: block;
+}
+
+#submit{
+    background-color: rgb(31, 138, 31);
+    border: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 20%;
+    height: 30px;
+    font-size: x-large;
+    border-radius: 51px;
+    margin-top: 20px;
+    margin-left: 40%;
+    padding: auto;
+   
+}
+#Container>p{
+    font-size: x-large;
+    margin: 0px;
+    color: rgb(73, 7, 7);
+}
