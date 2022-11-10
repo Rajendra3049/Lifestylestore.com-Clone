@@ -1,0 +1,216 @@
+body{
+    margin: 0px;
+    padding:0px;
+}
+#main_container{
+    border: px solid red;
+    width: 80%;
+    margin: auto;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+/*-------------------------------------------all images-------------------------------------- */
+.product_img{
+    border-right: px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 120%;
+    
+}
+.product_img img{
+    border: px solid red;
+    width: 95%;
+}
+.product_img img:hover{
+    width: 98%;
+    cursor:zoom-in;
+}
+/* -----------------------------all details--------------------------------------- */
+.details{
+    border: px solid yellowgreen;
+    width: 80%;
+    margin-left: 20%;
+}
+
+/* -------------------first details div------------------------------------------- */
+.details1_div{
+    border: px solid brown;
+    margin: 10px;
+}
+.details1_div > :first-child{
+    color: #f25139;
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: -10px;
+}
+.details1_div > :nth-child(2){
+color: #faa619;
+}
+.details1_div > :nth-child(4){
+   border: px solid black;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   gap: 10px;
+   margin-top: -10px;
+}
+.details1_div > :nth-child(4) button{
+    width: 55px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid gainsboro;
+    border-radius: 2px;
+}
+.details1_div > :nth-child(4) button:hover{
+    margin-top: 10px;
+}
+.basket_btn{
+    border: none;
+    width: 100%;
+    height: 60px;
+    background-color:#faa619;
+    color: white;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.basket_btn:hover{
+    margin-top: 20px;
+}
+/* -----------------------------------promotion div-------------------------------- */
+.details1_div + hr + div{
+    border: px solid red;
+    margin: 10px;
+}
+.details1_div + hr + div>h4{
+    color: #f25139;
+    background-color:#fff4f4;
+    width: 40%;
+    font-size: 14px;
+    text-align: center;
+    margin-left: 15px;
+    padding: 5px;
+}
+.details1_div + hr + div>p{
+   margin-left: 5px; 
+   margin-top: -10px;
+}
+
+/* ------------details3_div--------------------- */
+.details3_div{
+    border: px solid blueviolet;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.details3_div1{
+    border: px solid black;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.details3_div1:nth-child(1) img {
+    width: 35%;
+    margin-left: 20px;
+}
+.details3_div1>div+div{
+    border: px solid red;
+   margin-left: -40px;
+}
+.details3_div1>div+div h3{
+    font-size: 16px;
+    margin-bottom: -10px;
+}
+.details3_div1>div+div p{
+    font-size: 16px;
+}
+
+/* 2nd div */
+.details3_div2{
+    border: px solid black;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.details3_div2>:first-child img {
+    width: 20%;
+    margin-left: 20px;
+    margin-top: 11px;
+}
+.details3_div2>div+div{
+    border: px solid red;
+   margin-left: -80px;
+}
+.details3_div2>div+div p{
+    font-size: 16px;
+    color: #faa619;
+    font-weight: 800;
+}
+/* 3rd div */
+.details3_div3{
+    border: px solid black;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.details3_div3>:nth-child(1) img {
+    width: 35%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.details3_div3>div+div{
+    border: px solid red;
+   margin-left: -15px;
+}
+.details3_div3>div+div h3{
+    font-size: 17px;
+    margin-bottom: -10px;
+}
+.details3_div3>div+div p{
+    font-size: 16px;
+}
+/* 4th div */
+.details3_div4{
+    border: px solid black;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.details3_div4>:nth-child(1) img {
+    width: 25%;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.details3_div4>div+div{
+    border: px solid red;
+    margin-left: -70px;
+    width: 90%;
+}
+.details3_div4>div+div input{
+    height: 35px;
+    width: 75%;
+}
+.details3_div4>div+div button{
+    margin-left: 5px;
+    height: 42px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color:#faa619;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* overview div */
+.overview{
+    border: px solid black;
+    margin: 10px;
+}
+
+.overview2{
+    border: px solid black;
+    margin: 10px;
+    line-height: 24px;
+}
