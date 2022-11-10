@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#main_container{
+    border: px solid red;
+    width: 80%;
+    margin: auto;
+    height: 1000px;
+}
+
+/* --------------product area ----------------------------*/
+#cart_products{
+    display: flex;
+    justify-content: space-between;
+}
+/* -------------------items------------------- */
+#product_details{
+    border: px solid grey;
+    width: 64%;
+}
+
+.cards{
+    border: 1px solid rgba(199, 195, 195, 0.806);
+    margin-bottom: 10px;
+}
+.div_box{
+    border: px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.div1{
+    border: px solid blue;
+    width: 20%;
+    margin: 10px 0px 10px 25px;
+}
+.div1 img{
+    width: 100%;
+}
+
+.div2{
+    border: px solid rgb(165, 17, 179);
+    width: 68%;
+    margin: 10px 30px 10px 0px;
+}
+
+.product_name{
+    font-weight: 600;
+}
+.product_price{
+    font-weight: 600;
+}
+.cards button{
+    width: 97%;
+    height: 50px;
+    background-color:white ;
+    color: #faa619;
+    border: none;
+    border-top: 1px solid rgba(199, 195, 195, 0.806);
+    font-size: large;
+    margin-left: 1%;
+}
+.cards button:hover{
+    background-color: #faa619;
+    color: white;
+    cursor: pointer;
+}
+
+.cards button:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+/* ----------------------payment---------------------------- */
+#payment_details{
+    border: 1px solid black;
+    width: 34%;
+}
+
+#total{
+    border: 1px solid brown;
+}
+
+#payment_option{
+    border: 2px solid rgb(157, 5, 217);
+}
