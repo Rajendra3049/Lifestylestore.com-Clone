@@ -11,7 +11,7 @@ body{
     /* gap: 20px; */
 }
 #main_container img{
-    width: 90%;
+    width: 88%;
 }
 .card_div{
     border: px solid blue;
@@ -24,6 +24,7 @@ body{
     border: px solid rgb(245, 225, 7);
     height: 490px;
     text-align: center;
+    margin-bottom: 5px;
 }
 .slideshow_div:hover{
     cursor: pointer;
@@ -34,7 +35,8 @@ body{
     padding-left:20px ;
     padding-right: 18px;
     line-height: 12px;
-    height: 100px;
+    height: 70px;
+    margin: 10px;
 }
 .price{
     font-size: large;
@@ -61,5 +63,8 @@ h1{
 .basket_btn:hover{
     cursor: pointer;
     font-size: 25px;
-    background-color:#cf8506;
+    /* background-color:#cf8506; */
+}
+.basket_btn:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }

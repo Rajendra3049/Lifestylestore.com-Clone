@@ -22,7 +22,13 @@ const emptyAppend=()=>{
         empty_div.setAttribute("class","empty")
 
     let img_empty=document.createElement("img")
+        img_empty.setAttribute("class","empty_img")
     img_empty.src="https://cdn.dribbble.com/users/1010436/screenshots/11302442/empty_cart.jpg"
+    img_empty.onclick=()=>{
+        img_empty.onclick=window.location.href="../index.html"
+    }
+    
+    // img_empty.setAttribute("href","../index.html")
     empty_div.append(img_empty)
     product_div.append(empty_div)
 }
@@ -44,6 +50,25 @@ const appendData=(data)=>{
         let div2=document.createElement("div")
             div2.setAttribute("class","div2")
 
+        let images_div=document.createElement("div")
+            images_div.setAttribute("class","images_div")
+
+            let img1=document.createElement("img")
+                    img1.setAttribute("class","img1")
+                    img1.src=e.images[1]
+            let img2=document.createElement("img")
+                    img2.setAttribute("class","img2")
+                    img2.src=e.images[2]
+            let img3=document.createElement("img")
+                    img3.setAttribute("class","img3")
+                    img3.src=e.images[3]
+            let img4=document.createElement("img")
+                    img4.setAttribute("class","img4")
+                    img4.src=e.images[4]
+
+            images_div.append(img1,img2,img3,img4)
+
+            
 
         let img=document.createElement("img")
             img.setAttribute("class","product_img")
@@ -70,7 +95,7 @@ const appendData=(data)=>{
 
 
         div1.append(img)
-        div2.append(name,price)
+        div2.append(name,price,images_div)
 
         div_box.append(div1,div2)
 
@@ -91,6 +116,7 @@ if(cartData.length==0){
 
 
 const removeItem=(element,index)=>{
+    console.log("invoked remove")
     let data=JSON.parse(localStorage.getItem("cart"))
     let cartData= data.filter(function(e,i){
         return i!==index
@@ -109,6 +135,7 @@ const removeItem=(element,index)=>{
     if(cartData.length==0){
         window.location.reload()
     }
+
 }
 
 
@@ -122,6 +149,10 @@ const paymnetOption=()=>{
         show_div.innerHTML=null
         checkout_btn.disabled=true
         
+        let upi_img=document.createElement("img")
+        upi_img.setAttribute("class","upi_img")
+        upi_img.src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/UPI.gif"
+
         let upi_input=document.createElement("input")
         upi_input.setAttribute("class","user_upi")
         upi_input.placeholder="Enter UPI Address"
@@ -133,12 +164,25 @@ const paymnetOption=()=>{
             upi_btn.innerText="Submit"
             upi_btn.addEventListener("click",checkout_product)
 
-        show_div.append(upi_input,upi_btn)
+        show_div.append(upi_img,upi_input,upi_btn)
    }
    else if(option=="card"){
         show_div.innerHTML=null
         checkout_btn.disabled=true
         checkout_btn.removeAttribute("id")
+
+        let card=document.createElement("div")
+            card.setAttribute("class","card_div")
+        let card_input_div=document.createElement("div")
+            card_input_div.setAttribute("class","card_input_div")
+
+        let card_img_div=document.createElement("div")
+            card_img_div.setAttribute("class","card_img")
+
+        let card_img=document.createElement("img")
+            card_img.setAttribute("class","card_img")
+            card_img.src="https://cdn-icons-png.flaticon.com/512/4305/4305369.png"
+
         let card_input=document.createElement("input")
             card_input.setAttribute("class","card_input")
             card_input.type="number"
@@ -161,7 +205,13 @@ const paymnetOption=()=>{
             card_btn.setAttribute("class","card_btn")
             card_btn.innerText="Submit"
             card_btn.addEventListener("click",checkout_product)
-            show_div.append(card_input,cvv_input,exp_date, card_btn)
+
+            card_input_div.append(card_input,cvv_input,exp_date,)
+            card_img_div.append(card_img)
+
+
+            card.append(card_input_div,card_img_div)
+            show_div.append(card, card_btn)
    }
    else if(option=="cash"){
         show_div.innerHTML=null
