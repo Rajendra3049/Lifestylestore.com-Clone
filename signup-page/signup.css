@@ -105,4 +105,6 @@ body {
 .form--hidden{
     display: none;
 }
-
+.form__message{
+    color: red;
+}
