@@ -80,3 +80,49 @@ gap: 20px;
 .fitems a:hover{
     cursor: pointer;
 }
+
+/* middle Section */
+#middleSection{
+    display: flex;
+    flex-direction: row;
+
+}
+.middleSectionItems{
+    margin: 10px;
+    width: 20%;
+    border: 0px solid pink;
+    text-align: center;
+    height: 400px;
+}
+.btn1{
+    margin-top: 300px;
+    width: 80%;
+    padding: 10px;
+    color: goldenrod;
+    border: none;
+}
+#msi1{
+    background-image: url(Images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#msi2{
+    background-image: url(Images/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#msi3{
+    background-image: url(Images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#msi4{
+    background-image: url(Images/img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#msi5{
+    background-image: url(Images/img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
