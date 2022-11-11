@@ -80,6 +80,9 @@ color: #faa619;
 .basket_btn:hover{
     margin-top: 20px;
 }
+.basket_btn:active{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 /* -----------------------------------promotion div-------------------------------- */
 .details1_div + hr + div{
     border: px solid red;
@@ -93,6 +96,7 @@ color: #faa619;
     text-align: center;
     margin-left: 15px;
     padding: 5px;
+    margin-bottom: 15px;
 }
 .details1_div + hr + div>p{
    margin-left: 5px; 
@@ -110,6 +114,7 @@ color: #faa619;
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
 }
 .details3_div1:nth-child(1) img {
     width: 35%;
@@ -121,7 +126,7 @@ color: #faa619;
 }
 .details3_div1>div+div h3{
     font-size: 16px;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
 }
 .details3_div1>div+div p{
     font-size: 16px;
@@ -137,7 +142,7 @@ color: #faa619;
 .details3_div2>:first-child img {
     width: 20%;
     margin-left: 20px;
-    margin-top: 11px;
+    /* margin-top: 4px; */
 }
 .details3_div2>div+div{
     border: px solid red;
@@ -166,7 +171,7 @@ color: #faa619;
 }
 .details3_div3>div+div h3{
     font-size: 17px;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
 }
 .details3_div3>div+div p{
     font-size: 16px;
@@ -179,9 +184,8 @@ color: #faa619;
     margin-right: 10px;
 }
 .details3_div4>:nth-child(1) img {
-    width: 25%;
+    width: 28%;
     margin-left: 20px;
-    margin-top: 12px;
 }
 .details3_div4>div+div{
     border: px solid red;
@@ -202,7 +206,9 @@ color: #faa619;
     border: none;
     border-radius: 5px;
 }
-
+/* .details3_div4>div+div button:active{
+  
+} */
 /* overview div */
 .overview{
     border: px solid black;
