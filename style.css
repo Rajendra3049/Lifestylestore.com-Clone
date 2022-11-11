@@ -4,10 +4,26 @@
     margin: 0px;
     padding: 0px;
 }
-
+#navbar_RP{
+    border: px solid blue;
+    margin-bottom: 10px;
+   display: flex;
+   justify-content: space-evenly;
+   /* background-color: #f8f9fa; */
+}
+#navbarSupportedContent{
+    border: px solid blueviolet;
+    width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+}
 #logo{
+    border: px solid pink;
     width: 120px;
     height: 50px;
+    margin-right: 30px;
+    margin-right: 20px;
 }
 .navbar ul li a {
     color: black !important;
@@ -20,8 +36,9 @@
 
 #searchQueryContainer {
     padding: 5px 10px;
-    border: 0px solid green;
+    border: px solid green;
     background-color: #ecedeb;
+    
 }
 
 #query {
@@ -65,7 +82,6 @@
 .dropdown:hover .dropbtn {
     color: goldenrod !important;
 }
-
 /* footer */
 #footerContainer{
 display: grid;
