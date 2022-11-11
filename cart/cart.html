@@ -8,34 +8,60 @@
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-    <div id="navbar_RP"></div>
+    <div id="inner_body">
+        <div id="navbar_RP"></div>
 
-    <div id="main_container">
-        <h1>Your Shopping Basket</h1>
-        <hr>
-
-        <div id="cart_products">
-            <div id="product_details"></div>
-            <div id="payment_details">
-                <div id="total">
-                    <p>Total MRP <span id="total_price"></span></p>
-                    <p>Shipping charge <span id="shipping">Free</span></p>
+        <div id="main_container">
+            <h1>Your Shopping Basket</h1>
+            <hr>
+    
+            <div id="cart_products">
+                <div id="product_details">
+                    
                 </div>
-                <div id="payment_option">
-                    <label for="">UPI</label>
-                    <input type="text" name="" id="upi" placeholder="1234567@ylb"> <br>
+                <div id="payment_details">
+                    <div id="total">
+                        <p>Total MRP <span id="total_price"></span></p>
+                        <p>Shipping charge <span id="shipping">Free</span></p>
+                    </div>
+                    <div id="payment_option">
+                        <label for="">Payment Method:</label>
+                        <select name="" id="payment">
+                            <option value="">----Select Method----</option>
+                            <option value="upi">UPI</option>
+                            <option value="card">Card</option>
+                            <option value="cash">Cash On Delivery</option>
+                        </select>
+                        <div id="show_pay" class=".button-13"></div>
+                    </div>
+                    <hr width="90%">
+                    <button class="checkout">Check Out</button>
+                    <hr width="90%">
 
-                    <label for="">Card</label>
-                    <input type="text" name="" id="card" placeholder="1234 5678 9123"> <br>
-
-                    <label for="">Cash On Delivery</label>
+                    <div id="offer">
+                        <div id="offer_img"><img src="https://www.lifestylestores.com/static/icons/gift-box.png" alt=""></div>
+                        <div id="offer_msg">
+                            <h3>Offers for you !</h3>
+                            <p>Choose and apply voucher in 2 simple steps</p>
+                        </div>
+                    </div>
+                    <hr width="90%">
                 </div>
-                <button id="checkout">Check Out</button>
             </div>
         </div>
+    
+        <div id="fooeter_RP"></div>
     </div>
 
-    <div id="fooeter_RP"></div>
+    <div class="container">
+
+        <div class="popup" id="popup">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwuW7x6FgK0aILG3JgBT7yOy4HFZq4LO1JdQ&usqp=CAU" alt="">
+            <h2>Thank You!</h2>
+            <p>Your Order has been successfully placed. Thanks!</p>
+            <button type="button" id="ok_btn">OK</button>
+        </div>
+    </div>
 </body>
 </html>
 <script src="cart.js"></script>
