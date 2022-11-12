@@ -25,7 +25,7 @@ const newData = () => {
   let image = document.getElementById("img_url").value;
 
 
-
+console.log
   
   img_ARR.push(image);
 
@@ -43,8 +43,8 @@ const newData = () => {
     Overview:Discription,
     images:img_ARR
   };
-  console.log(catagory)
-type_of_data="women";
+  // console.log(catagory)
+let type_of_data="women";
 if(catagory=="Women"){
   type_of_data="Women"
 }else if(catagory=="Men"){
@@ -61,7 +61,7 @@ if(catagory==""||name==""||Price==""||Discription==""){
 
 
 const ADD_DATA_TO_S=async(data,location)=>{
-console.log("AAAA")
+// console.log("AAAA")
      let res = await fetch(`https://pacific-spire-33801.herokuapp.com/${location}`, {
       method: "POST",
       body: JSON.stringify(data),
@@ -70,7 +70,9 @@ console.log("AAAA")
       },
     });
     let myData = await res.json();
-  console.log(myData);
+    alert("New Product Added")
+  // console.log(myData);
+
  
 
 
