@@ -97,3 +97,10 @@ gap: 20px;
 .fitems a:hover{
     cursor: pointer;
 }
+
+#cart_length{
+    border: px solid red;
+    margin-left: 5px;
+    /* color: goldenrod */
+}
+

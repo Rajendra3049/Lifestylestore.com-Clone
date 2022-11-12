@@ -1,6 +1,9 @@
 //--------------------------------------------- experiment area---------------------------
 
 
+let RJData=JSON.parse(localStorage.getItem("cart"))|| []
+let cartLength=document.getElementById("cart_length")
+cartLength.innerText=RJData.length
 
 
 
@@ -272,6 +275,7 @@ function movetolocal(data){
     console.log("In")
     cartData.push(data)
     localStorage.setItem("cart",JSON.stringify(cartData))
+    window.location.reload()
 }
 
 
