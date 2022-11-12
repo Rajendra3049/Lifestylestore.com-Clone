@@ -105,3 +105,11 @@ hr{
 .department_box2 img{
     width: 90%;
 }
+
+.login{
+    visibility: hidden;
+}
+
+.username{
+    visibility: hidden;
+}

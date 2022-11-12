@@ -142,3 +142,10 @@ gap: 20px;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.login{
+    visibility: hidden;
+}
+
+.username{
+    visibility: hidden;
+}

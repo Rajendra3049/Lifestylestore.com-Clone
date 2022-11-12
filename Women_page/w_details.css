@@ -220,3 +220,11 @@ color: #faa619;
     margin: 10px;
     line-height: 24px;
 }
+
+.login{
+    visibility: hidden;
+}
+
+.username{
+    visibility: hidden;
+}

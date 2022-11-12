@@ -288,3 +288,35 @@ function detailsData(clikcData){
 }
 
 
+// tial;
+let count=0
+let UserName=document.getElementById("username")
+let login_btn=document.getElementById('login')
+let logout_btn=document.getElementById('logout')
+
+
+if(count==0){
+    login_btn.innerHTML="Sign Up / Sign In"
+}
+
+let user=JSON.parse(localStorage.getItem("User_info"))
+if(user){
+    UserName.innerText=user
+    logout_btn.innerText="Log Out"
+    login.classList.add("login");
+    count=1
+    login_btn.innerText=null
+
+}
+
+
+logout_btn.addEventListener("click",logout)
+function logout(){
+    UserName.classList.add("username");
+    login.classList.remove("login");
+    UserName.innerText=null
+    logout_btn.innerText=null
+    localStorage.removeItem("User_info")
+    login_btn.innerHTML="Sign Up / Sign In"
+    count=0
+}

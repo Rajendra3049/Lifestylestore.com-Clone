@@ -339,3 +339,11 @@ body{
 .empty_img{
     cursor: pointer;
 }
+
+.login{
+    visibility: hidden;
+}
+
+.username{
+    visibility: hidden;
+}
