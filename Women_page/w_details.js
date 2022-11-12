@@ -1,4 +1,6 @@
-
+let RJData=JSON.parse(localStorage.getItem("cart"))|| []
+let cartLength=document.getElementById("cart_length")
+cartLength.innerText=RJData.length
 // -------------get data from local storage-----------------------
 
 let productData=JSON.parse(localStorage.getItem("details_data")) || []
@@ -218,4 +220,5 @@ function movetolocal(data){
     console.log("In")
     cartData.push(data)
     localStorage.setItem("cart",JSON.stringify(cartData))
+    window.location.reload()
 }

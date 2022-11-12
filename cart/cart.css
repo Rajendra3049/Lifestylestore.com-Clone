@@ -116,10 +116,11 @@ body{
 /* total price */
 #total_price{
     border: px solid black;
-    margin-left: 70%;
+    margin-left: 60%;
 }
 #shipping{
-    margin-left: 63%;
+    border: px solid black;
+    margin-left: 51%;
     color:crimson;
     font-weight: 600;
 }

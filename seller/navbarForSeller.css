@@ -13,8 +13,10 @@
  
     /* justify-content: center; */
 }
-#nav>img{
-    width: 8%;
+
+#nav img{
+    width: 25%;
+    margin-right: -20%;
 }
 #nav>div{
     /* border: 1px solid red; */

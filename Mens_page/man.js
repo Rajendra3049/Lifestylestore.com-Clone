@@ -1,5 +1,7 @@
 // ---------------------------------------impot--------------------------------------------
-
+let RJData=JSON.parse(localStorage.getItem("cart"))|| []
+let cartLength=document.getElementById("cart_length")
+cartLength.innerText=RJData.length
 // ------------------------------------select all div--------------------------------------
 
 

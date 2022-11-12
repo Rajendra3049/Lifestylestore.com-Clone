@@ -1,5 +1,8 @@
 let cartData=JSON.parse(localStorage.getItem("cart")) || []
 
+let RJData=JSON.parse(localStorage.getItem("cart"))|| []
+let cartLength=document.getElementById("cart_length")
+cartLength.innerText=RJData.length
 
 
 let product_div=document.getElementById("product_details")
@@ -132,10 +135,8 @@ const removeItem=(element,index)=>{
     }
     // console.log(sum)
     totoal_price.innerText=`₹ ${sum}`
-    if(cartData.length==0){
+    
         window.location.reload()
-    }
-
 }
 
 
@@ -153,16 +154,18 @@ const paymnetOption=()=>{
         upi_img.setAttribute("class","upi_img")
         upi_img.src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/batman-returns/logos/UPI.gif"
 
+
         let upi_input=document.createElement("input")
         upi_input.setAttribute("class","user_upi")
         upi_input.placeholder="Enter UPI Address"
-        upi_input.required
 
         let upi_btn=document.createElement("button")
             upi_btn.setAttribute("class","upi_btn")
 
             upi_btn.innerText="Submit"
             upi_btn.addEventListener("click",checkout_product)
+
+          
 
         show_div.append(upi_img,upi_input,upi_btn)
    }
@@ -231,6 +234,7 @@ let pay=document.getElementById("payment")
 pay.addEventListener("change",paymnetOption)
 
 const checkout_product=()=>{
+    
     checkout_btn.id="checkout2"
     checkout_btn.disabled=false
    
