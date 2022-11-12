@@ -165,7 +165,16 @@ document.querySelector("#submt123").addEventListener("click", async (e) => {
   let A = await res.json();
   // console.log(A);
   alert("Signup Successfull");
-
+  // location.reload()
   // window.location.href=""
 
 });
+
+function myFunction() {
+  var x = document.getElementById("getpassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}

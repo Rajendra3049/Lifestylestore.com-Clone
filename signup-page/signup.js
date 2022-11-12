@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (enteremail == getemail) {
       if (enterpassword == getpassword) {
         alert("Login Successfull");
-
+        localStorage.setItem("User_info",JSON.stringify(logininfo.Username))
 
          window.location.href="../index.html"
       } else {
@@ -165,7 +165,20 @@ document.querySelector("#submt123").addEventListener("click", async (e) => {
   let A = await res.json();
   // console.log(A);
   alert("Signup Successfull");
-
+  // window.reload()
   // window.location.href=""
 
 });
+
+
+
+
+
+function myFunction() {
+  var x = document.getElementById("getpassword");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
