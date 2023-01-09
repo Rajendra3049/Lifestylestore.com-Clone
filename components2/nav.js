@@ -1,5 +1,5 @@
-function navbar(){
-    return ` <nav class="navbar navbar-expand-lg navbar-light bg-light">
+function navbar() {
+  return ` <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#"><img id="logo" class="img-fluid" src="Images/finalLogo.jpeg"></a>
 
@@ -68,4 +68,4 @@ function navbar(){
     </div>
 </nav>`;
 }
-export{ navbar }
+export { navbar };
