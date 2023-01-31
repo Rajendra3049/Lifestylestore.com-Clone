@@ -84,8 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let logininfo = await res.json();
     console.log(logininfo);
-    getemail = logininfo.id;
-    getpassword = logininfo.Password;
+    getemail = logininfo[0].email;
+    getpassword = logininfo[0].Password;
 
     if (enteremail == getemail) {
       if (enterpassword == getpassword) {
