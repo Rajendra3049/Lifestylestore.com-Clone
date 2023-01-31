@@ -16,7 +16,7 @@ const getData = async (cat) => {
   let catagory = document.getElementById("Category").value;
 
   let res = await fetch(
-    `https://pacific-spire-33801.herokuapp.com/${catagory}`
+    `https://filthy-lime-glasses.cyclic.app/${catagory}`
   );
   let data = await res.json();
   console.log(data);
@@ -59,7 +59,7 @@ const remove=async(id)=>{
     // console.log(id)
 
 let catagory = document.getElementById("Category").value;
-let res=await fetch(`https://pacific-spire-33801.herokuapp.com/${catagory}/${id}`,{
+let res=await fetch(`https://filthy-lime-glasses.cyclic.app/${catagory}/${id}`,{
     method:'DELETE',
     headers:{
       'Content-Type':'application/json'

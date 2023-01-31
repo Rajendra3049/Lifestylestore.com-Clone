@@ -62,7 +62,7 @@ if(catagory==""||name==""||Price==""||Discription==""){
 
 const ADD_DATA_TO_S=async(data,location)=>{
 // console.log("AAAA")
-     let res = await fetch(`https://pacific-spire-33801.herokuapp.com/${location}`, {
+     let res = await fetch(`https://filthy-lime-glasses.cyclic.app/${location}`, {
       method: "POST",
       body: JSON.stringify(data),
       headers:{

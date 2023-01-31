@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
     var enteremail = document.getElementById("getemail").value;
     var enterpassword = document.getElementById("getpassword").value;
     let res = await fetch(
-      `https://pacific-spire-33801.herokuapp.com/comments/${enteremail}`
+      `https://filthy-lime-glasses.cyclic.app/login/${enteremail}`
     );
     //  var getemail = JSON.parse(localStorage.getItem("userEmail"));
     //  var getpassword = JSON.parse(localStorage.getItem("userpassword"));
@@ -146,7 +146,7 @@ document.querySelector("#submt123").addEventListener("click", async (e) => {
   var Username = document.getElementById("signupUsername").value.trim(" ");
   console.log(email, password);
   sendUdata = {
-    id: email,
+    email: email,
     Username: Username,
     Password: password,
   };
@@ -155,7 +155,7 @@ document.querySelector("#submt123").addEventListener("click", async (e) => {
   //   localStorage.setItem("userEmail", JSON.stringify(email));
   //   localStorage.setItem("userpassword", JSON.stringify(password));
 
-  let res = await fetch(`https://pacific-spire-33801.herokuapp.com/comments`, {
+  let res = await fetch(`https://filthy-lime-glasses.cyclic.app/signup`, {
     method: "POST",
     body: JSON.stringify(sendUdata),
     headers: {
